@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Programmer</title>
+    <link rel="stylesheet" href="css/programmer_style.css">
+</head>
+<body>
+ 
+        
+    <div class="calculator dark">
+     
+            <div id="myMenu" class="dropdown">
+                <a href="javascript: void(0)" class="buttonX" onclick="closeMenu()">&times;</a>
+                <div class="dropdown-lists">
+                    <a href="index.html">Standard</a>
+                    <a href="scientific.html">Scientific</a>
+                    <a href="programmer.html">programmer</a>
+                    <a href="volume.html">Volume Calculator</a>
+                    <a href="date.html">Date calculation</a>
+                    <a href="length.html">Length Convertor</a>
+                    <a href="weight.html">weight Convertor</a>
+                    <a href="temperature.html">Temperature convertor</a>
+                </div>
+            </div>
+            <span class ="hamburger" onclick="openMenu()">&#9776;</span>
+            <div class="theme-toggler active">
+                <i class="toggler-icon"></i>
+            </div>
+        <div class="choose">
+            
+            <p>Input in :</p>
+            <form>
+                <input class="ip" id="bin" type="radio" name="input" value="bin" onclick="setr();dis();disbutton();"> Binary&nbsp;
+                <input class="ip" id="oct" type="radio" name="input" value="oct" onclick="setr();dis();disbutton();"> Octal&nbsp;
+                <input class="ip" id="dec" type="radio" name="input" value="dec" onclick="setr();dis();disbutton();"> Decimal&nbsp;
+                <input class="ip" id="hex" type="radio" name="input" value="hex" onclick="setr();dis();disbutton();"> Hexa-decimal&nbsp;
+            </form>
+            <p>Output in :</p>
+            <form>
+                <input class="ip" id="opbin" type="radio" name="input" value="bin"> Binary&nbsp;
+                <input class="ip" id="opoct" type="radio" name="input" value="oct"> Octal&nbsp;
+                <input class="ip" id="opdec" type="radio" name="input" value="dec"> Decimal&nbsp;
+                <input class="ip" id="ophex" type="radio" name="input" value="hex"> Hexa-decimal&nbsp;
+            </form>
+        </div>
+        <br />
+    
+        <input class="box input" id="box" type="text" placeholder="Enter Here" onclick="setr(); disbutton();" disabled>
+    
+        <div class="buttons">
+    
+            <div class="operators">
+                <input type="button" id="ba" value="A" onclick="btna();">
+                <input type="button" id="bb" value="B" onclick="btnb();">
+                <input type="button" id="bc" value="C" onclick="btnc();">
+                <input type="button" id="bd" value="D" onclick="btnd();">
+                <input type="button" id="be" value="E" onclick="btne();">
+                <input type="button" id="bf" value="F" onclick="btnf();">
+            </div>
+    
+    
+            <div class="leftPanel">
+                <div class="numbers">
+                    <input type="button" id="b7" value="7" onclick="btn7();">
+                    <input type="button" id="b8" value="8" onclick="btn8();">
+                    <input type="button" id="b9" value="9" onclick="btn9();">
+                </div>
+                <div class="numbers">
+                    <input type="button" id="b4" value="4" onclick="btn4();">
+                    <input type="button" id="b5" value="5" onclick="btn5();">
+                    <input type="button" id="b6" value="6" onclick="btn6();">
+                </div>
+                <div class="numbers">
+                    <input type="button" id="b1" value="1" onclick="btn1();">
+                    <input type="button" id="b2" value="2" onclick="btn2();">
+                    <input type="button" id="b3" value="3" onclick="btn3();">
+                </div>
+                <div class="numbers">
+                    <input class="zero" type="button" id="b0" value="0" onclick="btn0();">
+                    <input type="button" class="clear" value="Clear" onclick="clr();">
+                </div>
+            </div>
+    
+            <input class="equal" type="button" class="clear" value="=" onclick="setr();process();">
+        </div>
+    </div>
+    <script src="js/programmer_script.js"></script>
+</body>
+</html>
