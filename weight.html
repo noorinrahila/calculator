@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weight Convertor</title>
+    <link rel="stylesheet" href="css/weight_style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Caveat:wght@600&family=Raleway:wght@300&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="nav">
+        <ul>
+       <li>
+            <div id="myMenu" class="dropdown">
+                <a href="javascript: void(0)" class="buttonX" onclick="closeMenu()">&times;</a>
+                <div class="dropdown-lists">
+                    <a href="index.html">Standard</a>
+                    <a href="scientific.html">Scientific</a>
+                    <a href="programmer.html">programmer</a>
+                    <a href="volume.html">Volume Calculator</a>
+                    <a href="date.html">Date calculation</a>
+                    <a href="length.html">Length Convertor</a>
+                    <a href="weight.html">weight Convertor</a>
+                    
+                  
+                    <a href="temperature.html">Temperature convertor</a>
+                </div>
+            </div>
+          
+            <span class ="hamburger" onclick="openMenu()" >&#9776;</span>
+       </li> <li>
+           <h1>Weight</h1>
+       </li>
+        </ul>  
+    </div>
+    <form name="lengthCon" class="lengthCon">
+	
+		<p class="Value">From</p> 
+			<select class="movement" name=fromUnit onChange="convertUnit()">
+			<option> miligrams
+			<option> Kilograms
+			<option> grams
+      <option> pound
+      <option> tonne
+        <option>ounces
+          
+			</select>
+		
+		 <p class="Options">To</p>
+		<p>
+			<select class="moves" name=toUnit onChange="convertUnit()">
+                <option> miligrams
+                    <option> Kilograms
+                    <option> grams
+              <option> pound
+              <option> tonne
+                <option>ounces
+			</select>
+  </p>
+	
+		<p colspan="4"><div id="formula" hidden>meters = 1 meters</div></p>
+
+	
+		<p class="text">Enter Value:<input class="around" type="text" name="fromValue" size="5" maxlength="10"></p>
+		<p><input class="submit"type=button value="Convert" onClick="convertUnit()"></p>
+		<br/><br/><p><span id="toValue"> The value:</span></p>
+</form>
+
+   
+
+<script src="js/weight_script.js"></script>
+    
+</body>
+</html>

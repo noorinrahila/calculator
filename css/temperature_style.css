@@ -1,0 +1,183 @@
+/* BACKGROUND*/
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  background-image: url("../assets/images/background_3.jpg");
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+/* NAVBAR*/
+.nav {
+  overflow: hidden;
+  margin: 0;
+  background-color: #5921e6;
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+li {
+  float: left;
+  margin: 15px;
+  color: white;
+}
+
+.dropdown {
+  height: 0%;
+  width: 100%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: rgba(61, 87, 231, 0.575);
+  overflow-y: hidden;
+  transition: 0.5s;
+}
+.dropdown-lists {
+  position: relative;
+  top: 1%;
+  width: 100%;
+  text-align: justify;
+  margin-top: 30px;
+}
+.dropdown a {
+  padding: 8px;
+  text-decoration: none;
+  font-size: 40px;
+  font-family: Copperplate, "Copperplate Gothic Light", fantasy;
+  color: white;
+  display: block;
+  transition: 0.3s;
+}
+.dropdown a:hover,
+.dropdown a:focus {
+  color: rgb(39, 16, 16);
+}
+.hamburger {
+  color: rgb(253, 250, 250);
+  left: 100px;
+  top: 20px;
+  font-size: 30px;
+  cursor: pointer;
+}
+.dropdown .buttonX {
+  top: 20px;
+  right: 50px;
+  font-size: 30px;
+  color: rgba(247, 242, 242, 0.322);
+}
+/* form */
+.lengthCon {
+  width: 100vw;
+  max-width: 37.5em;
+  background-color: #87858b;
+  padding: 6em 3em;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+  opacity: 0.9;
+}
+.Value {
+  color: rgb(44, 10, 143);
+  font-size: 25px;
+  font-family: "Caveat", cursive;
+  font-family: "Raleway", sans-serif;
+}
+
+.movement,
+.moves {
+  font-size: 25px;
+  font-family: "Caveat", cursive;
+  font-family: "Raleway", sans-serif;
+  margin-left: 30px;
+  margin-top: 10px;
+  padding-top: 0.3em;
+  padding-bottom: 0.3em;
+  padding-right: 8em;
+  background-color: rgb(8, 62, 116);
+  border: none;
+  border-radius: 1rem;
+  color: whitesmoke;
+}
+.Options {
+  color: rgb(44, 10, 143);
+  font-size: 25px;
+  font-family: "Caveat", cursive;
+  font-family: "Raleway", sans-serif;
+  margin-top: 1em;
+}
+.text {
+  font-family: "Caveat", cursive;
+  font-family: "Raleway", sans-serif;
+
+  font-size: 30px;
+  margin-top: 20px;
+
+  text-align: left;
+  color: rgb(44, 10, 143);
+}
+.around {
+  width: 20%;
+  font-size: 16px;
+  margin-left: 1em;
+  padding: 1em;
+}
+.submit {
+  display: block;
+  background-color: rgb(238, 39, 3);
+  color: whitesmoke;
+  border: none;
+  font-size: 20px;
+  margin-top: -60px;
+  margin-left: 330px;
+  border-radius: 0.5em;
+  padding: 0.9em;
+  font-weight: 600;
+}
+#toValue {
+  color: white;
+  background-color: rgb(63, 59, 59);
+  margin-left: 1em;
+  margin-top: 30px;
+  padding: 20px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+
+  font-size: 30px;
+}
+@media screen and (max-width: 550px) {
+  .lengthCon {
+    padding: 4em 2em;
+  }
+
+  .Value,
+  .Options,
+  .text,
+  #toValue,
+  .around {
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+  }
+  .submit {
+    margin-left: 100px;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+  }
+  .moves,
+  .movement {
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    padding-right: 5em;
+  }
+}
